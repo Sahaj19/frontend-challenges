@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header nav {
+  padding: 10px 0;
+}
+
+header nav h1 {
+  text-align: center;
+}
+
+.counter_container {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.counter_container .box {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.counter_container .box #counter {
+  word-wrap: break-word;
+}
+
+.counter_container .box .control_btn {
+  padding: 5px 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.counter_container .box h3 input[type="number"] {
+  padding: 4px 2px;
+  font-size: 14px;
+  outline: none;
+}
+
+.counter_container .box #rest_btn {
+  font-size: 15px;
+  padding: 5px 24px;
+  background-color: steelblue;
+  border: none;
+  color: #fff;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
