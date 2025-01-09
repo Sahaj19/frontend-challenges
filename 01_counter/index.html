@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Counter App</h1>
+    </nav>
+  </header>
+
+  <section class="counter_container">
+    <div class="box">
+      <h2 id="counter">0</h2>
+    </div>
+    <div class="box">
+      <button id="decrement_btn" class="control_btn">-</button>
+      <button id="increment_btn" class="control_btn">+</button>
+    </div>
+    <div class="box">
+      <h3>Increment/Decrement by <input type="number" id="number_input" value="1" min="0" max="10"></h3>
+    </div>
+    <div class="box">
+      <button id="rest_btn">Reset</button>
+    </div>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>
