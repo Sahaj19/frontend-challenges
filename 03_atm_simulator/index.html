@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atm Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>ATM Simulator</h1>
+    </nav>
+  </header>
+
+  <section class="container">
+    <p>Your Current Pin Is : <span id="currentAtmPin"></span></p>
+    <div class="box"><button id="changePin" class="btn" disabled>Change Atm Pin</button></div>
+    <div class="box"><span id="sessionTimeout"></span></div>
+    <div class="box">
+      <input type="number" id="pinInput" placeholder="Enter your Pin" autofocus>
+      <button class="btn" id="submit">Submit</button>
+    </div>
+    <div class="box">
+      <button class="btn" id="checkBalance" disabled>Check Balance</button>
+      <button class="btn" id="deposit" disabled>Deposit</button>
+      <button class="btn" id="withdraw" disabled>Withdraw</button>
+      <button class="btn" id="logout" disabled>Logout</button>
+    </div>
+    <div class="box"><p id="message"></p></div>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>
