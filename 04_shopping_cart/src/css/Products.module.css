@@ -1,0 +1,38 @@
+.cartItems {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemBox {
+  width: 250px;
+  margin: 20px 0;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.quantityPurchased {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.goToCartLink {
+  text-align: center;
+}

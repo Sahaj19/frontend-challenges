@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.cartItemsCount {
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
