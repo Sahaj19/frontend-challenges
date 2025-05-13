@@ -1,11 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Styles from "../css/Products.module.css";
 import PropTypes from "prop-types";
 
 
-function Products({ productDetailsArray }) {
+function Products({ productDetailsArray, updateTotalItemsCount }) {
   const [shoppingCart, setShoppingCart] = useState(JSON.parse(localStorage.getItem("product-basket")) || []);
+
+  useEffect(() => {
+    const newCount = shoppingCart.reduce((acc,curr) => {
+      return acc + curr.product_count
+    },0);
+    updateTotalItemsCount(newCount);
+  }, [shoppingCart]);
 
   // Handling Decrease Item Count
   const decreaseItemCount = (productId) => {
@@ -68,6 +75,7 @@ function Products({ productDetailsArray }) {
 
 Products.propTypes = {
   productDetailsArray: PropTypes.array,
+  updateTotalItemsCount: PropTypes.func
 };
 
 export default Products;
